@@ -9,9 +9,9 @@ import Video from "./pagina/video";
 export default function App(){
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">Empresa</Link>
+          <Link className="navbar-brand" to="/">Mercería Calderon</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -19,10 +19,26 @@ export default function App(){
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item"><Link className="nav-link" to="/">Inicio</Link></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Análisis Estructurado
+                </a>
+                <ul class="dropdown-menu">
+                  <li><h6 class="dropdown-header">Modelo Esencial</h6></li>
+                  <li>
+                    <Link className="dropdown-item" to="/modelo-ambiental">
+                      Modelo Ambiental
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/modelo-comportamiento">
+                      Modelo de Comportamiento
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item"><Link className="nav-link" to="/poo">Paradigma Orientado a Objetos</Link></li>
               <li className="nav-item"><Link className="nav-link" to="/marco-teorico">Marco Teórico</Link></li>
-              <li className="nav-item"><Link className="nav-link" to="/modelo-ambiental">Modelo Ambiental</Link></li>
-              <li className="nav-item"><Link className="nav-link" to="/modelo-comportamiento">Modelo de Comportamiento</Link></li>
-              <li className="nav-item"><Link className="nav-link" to="/poo">POO</Link></li>
               <li className="nav-item"><Link className="nav-link" to="/video">Video</Link></li>
             </ul>
           </div>
