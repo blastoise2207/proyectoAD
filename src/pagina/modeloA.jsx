@@ -3,7 +3,7 @@ import '../assets/MA/styles.css';
 
 export default function MA() {
   return (
-    <div className="container-fluid modelo-ambiental">
+    <div className="container modelo-ambiental">
       <div className="row">
         <div className="col-12">
           <div className="header-section text-center py-4 mb-4">
@@ -29,7 +29,7 @@ export default function MA() {
                 <span className="badge bg-primary me-2">¿Cómo?</span>
                 Registrando los productos, gestionando inventario y facilitando transacciones de compra y venta.
               </div>
-              <div className="location-info p-3 bg-warning bg-opacity-10 rounded">
+              <div className="location-info p-3 rounded">
                 <span className="badge bg-primary me-2">¿Dónde?</span>
                 <i className="bi bi-geo-alt-fill text-brown"></i>
                 <strong>Mercería Calderon</strong> - "Zona 12 de Octubre Calle Raul Salmon entre calle 4 y calle 3"
@@ -54,7 +54,7 @@ export default function MA() {
             <div className="card-body text-center">
               <img 
                 src={logo} 
-                className="img-fluid rounded shadow-sm diagram-image" 
+                className="img-fluid rounded shadow-sm" 
                 alt="Diagrama de Contexto del Sistema"
               />
             </div>

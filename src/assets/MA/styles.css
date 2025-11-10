@@ -4,7 +4,7 @@
 }
 
 .header-section {
-  background: linear-gradient(135deg, #8b4789 0%, #a8607d 50%, #c97c7f 100%);
+  background: linear-gradient(90deg,rgba(22, 146, 171, 1) 63%, rgba(142, 189, 168, 1) 99%);
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(139, 71, 137, 0.3);
   margin-bottom: 2rem !important;
@@ -31,8 +31,7 @@
 }
 
 .card-header {
-  background: linear-gradient(135deg, #8b4789 0%, #a8607d 100%) !important;
-  border-bottom: 3px solid #c97c7f;
+  background: linear-gradient(90deg,rgba(22, 146, 171, 1) 63%, rgba(142, 189, 168, 1) 99%);
   padding: 1.2rem 1.5rem;
 }
 
@@ -50,8 +49,8 @@
 }
 
 .purpose-item {
-  border-left: 4px solid #8b4789;
-  background: linear-gradient(90deg, #f3e6f3 0%, #fdeef1 100%) !important;
+  border-left: 4px solid black;
+  background-color: linear-gradient(90deg, #f3e6f3 0%, #fdeef1 100%) !important;
   transition: all 0.3s ease;
 }
 
@@ -62,12 +61,11 @@
 }
 
 .location-info {
-  border-left: 4px solid #c97c7f;
-  background: linear-gradient(90deg, #fff9e6 0%, #ffe8cc 100%) !important;
+  border-left: 4px solid black;
 }
 
 .badge.bg-primary {
-  background: linear-gradient(135deg, #8b4789 0%, #a8607d 100%) !important;
+  background: linear-gradient(90deg,rgba(24, 66, 74, 1) 63%, rgba(14, 42, 51, 1) 99%);
   padding: 0.5rem 0.8rem;
   font-size: 0.9rem;
   font-weight: 600;
@@ -75,14 +73,10 @@
 }
 
 .alert-info {
-  background: linear-gradient(90deg, #e3f2fd 0%, #e1bee7 100%);
-  border: 2px solid #8b4789;
+  background: linear-gradient(90deg,rgba(101, 197, 230, 0.55) 63%, rgba(101, 197, 230, 0.6) 63%);
+  border: 2px solid black;
   border-radius: 10px;
   color: #4a2849;
-}
-
-.alert-info strong {
-  color: #8b4789;
 }
 
 .diagram-image {
@@ -184,4 +178,9 @@ h5 {
 
 .card:nth-child(3) {
   animation-delay: 0.2s;
+}
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 2rem !important;
 }

@@ -6,7 +6,7 @@ body {
 }
 
 .navbar-custom {
-  background: linear-gradient(135deg, #8b4789 0%, #a8607d 50%, #c97c7f 100%) !important;
+  background: linear-gradient(90deg,rgba(22, 146, 171, 1) 63%, rgba(142, 189, 168, 1) 99%);
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   padding: 1rem 0;
 }
@@ -93,9 +93,6 @@ body {
 
 .container {
   background-color: #fff;
-  border-radius: 12px;
-  padding: 2rem;
-  margin-top: 2rem !important;
 }
 
 h2 {

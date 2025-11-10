@@ -4,7 +4,7 @@
 }
 
 .modelo-comportamiento .header-section {
-  background: linear-gradient(135deg, #a8607d 0%, #8b4789 50%, #6b3667 100%);
+  background: linear-gradient(90deg,rgba(22, 146, 171, 1) 63%, rgba(142, 189, 168, 1) 99%);
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(139, 71, 137, 0.3);
   margin-bottom: 2rem !important;
@@ -38,8 +38,7 @@
 }
 
 .modelo-comportamiento .card-header.bg-gradient {
-  background: linear-gradient(135deg, #8b4789 0%, #a8607d 100%) !important;
-  border-bottom: 3px solid #c97c7f;
+  background: linear-gradient(90deg,rgba(22, 146, 171, 1) 63%, rgba(142, 189, 168, 1) 99%) !important;
   padding: 1.2rem 1.5rem;
 }
 
@@ -95,8 +94,8 @@
 }
 
 .diagram-info {
-  background: linear-gradient(90deg, #f3e6f3 0%, #fdeef1 100%);
-  border-left: 4px solid #8b4789;
+  background: linear-gradient(90deg,rgba(101, 197, 230, 0.55) 63%, rgba(101, 197, 230, 0.6) 63%);
+  border-left: 4px solid black;
   border-radius: 8px;
 }
 
@@ -115,7 +114,7 @@
 }
 
 .text-primary-custom {
-  color: #8b4789 !important;
+  color: #1d456b !important;
 }
 
 .alert-info-custom {
@@ -207,4 +206,9 @@
 
 .modelo-comportamiento .card:hover::before {
   opacity: 1;
+}
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 2rem !important;
 }

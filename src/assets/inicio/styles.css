@@ -1,5 +1,7 @@
-.text-brown {
-    color: #5d4037;
+.text-1 {
+    color: #000 !important;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
 }
 .bg-primary {
     background-color: #8d6e63 !important;
@@ -28,4 +30,19 @@
 }
 .category-card, .card {
     transition: all 0.3s ease;
+}
+
+.text-brown-light {
+  color: #d7ccc8;
+}
+.hover-text:hover {
+  color: #d7ccc8 !important;
+  transition: color 0.3s ease;
+}
+.hover-icon:hover {
+  color: #d7ccc8 !important;
+  transition: color 0.3s ease;
+}
+.fondoF{
+  background: #184c54;
 }

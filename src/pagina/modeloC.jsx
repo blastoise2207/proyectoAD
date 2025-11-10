@@ -4,7 +4,7 @@ import dte from '../assets/MC/DTE.jpg';
 
 export default function MC() {
   return (
-    <div className="container-fluid modelo-comportamiento">
+    <div className="container modelo-comportamiento">
       <div className="row">
         <div className="col-12">
           <div className="header-section text-center py-4 mb-4">
@@ -55,7 +55,7 @@ export default function MC() {
             </div>
             <div className="card-body">
               <div className="card-body text-center">
-                <img src={dte} className="img-fluid rounded shadow-sm diagram-image" alt="Diagrama de Transición de Estados" />
+                <img src={dte} className="img-fluid rounded shadow-sm" alt="Diagrama de Transición de Estados" />
               </div>
               <div className="diagram-info mt-4 p-3">
                 <h5 className="text-primary-custom">

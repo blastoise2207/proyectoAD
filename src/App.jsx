@@ -11,8 +11,8 @@ export default function App(){
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark navbar-custom">
-        <div className="container-fluid">
-          <Link className="navbar-brand" to="/">🧶 Mercería Calderón</Link>
+        <div className="container-fluid px-3">
+          <Link className="navbar-brand" to="/">Mercería Calderón</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -28,12 +28,12 @@ export default function App(){
                   <li><h6 className="dropdown-header">Modelo Esencial</h6></li>
                   <li>
                     <Link className="dropdown-item" to="/modelo-ambiental">
-                      📊 Modelo Ambiental
+                      Modelo Ambiental
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/modelo-comportamiento">
-                      🔄 Modelo de Comportamiento
+                      Modelo de Comportamiento
                     </Link>
                   </li>
                 </ul>
@@ -45,16 +45,17 @@ export default function App(){
           </div>
         </div>
       </nav>
-
-      <div className="container mt-4">
-        <Routes>
-          <Route path="/" element={<Inicio />} />
-          <Route path="/marco-teorico" element={<MarcoTeorico />} />
-          <Route path="/modelo-ambiental" element={<MA />} />
-          <Route path="/modelo-comportamiento" element={<MC />} />
-          <Route path="/poo" element={<POO />} />
-          <Route path="/video" element={<Video />} />
-        </Routes>
+    <div className="container-fluid p-0 m-0">
+        <div>
+          <Routes>
+            <Route path="/" element={<Inicio />} />
+            <Route path="/marco-teorico" element={<MarcoTeorico />} />
+            <Route path="/modelo-ambiental" element={<MA />} />
+            <Route path="/modelo-comportamiento" element={<MC />} />
+            <Route path="/poo" element={<POO />} />
+            <Route path="/video" element={<Video />} />
+          </Routes>
+        </div>
       </div>
     </>
   );
