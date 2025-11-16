@@ -46,3 +46,24 @@
 .fondoF{
   background: #184c54;
 }
+.container{
+  background: none !important;
+}
+.object-fit-cover {
+  object-fit: cover;
+}
+        
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+        
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+}
+.cardfondo{
+  background: none !important;
+}
+.card{
+  border: none !important;
+}

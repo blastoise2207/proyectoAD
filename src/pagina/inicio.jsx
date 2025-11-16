@@ -3,93 +3,74 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../assets/inicio/styles.css';
-import logo from '../assets/inicio/logo.png';
+import logo from '../assets/inicio/logosf2.png';
 import lana from '../assets/inicio/lana.jpg';
 import aguja from '../assets/inicio/agujas.jpg';
 import boton from '../assets/inicio/botones.jpg';
+import bg1 from '../assets/inicio/bg1.jpg';
+import bg2 from '../assets/inicio/bg2.jpeg';
+import bg3 from '../assets/inicio/bg3.jpg';
 
 export default function Inicio() {
   return (
     <div className="inicio-container">
-      <section className="hero-section">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6">
-              <h1 className="display-4 fw-bold text-1 mb-4">Mercería Calderón</h1>
-              <p className="lead text-muted mb-4">
-                Todo para tus proyectos de costura, tejido y manualidades. 
-                Encuentra los mejores hilados, telas y accesorios de calidad.
-              </p>
-              <div className="d-flex flex-wrap gap-3">
-                <button className="btn btn-primary btn-lg px-4 py-2">
-                  Ver Productos
-                </button>
-                <button className="btn btn-outline-primary btn-lg px-4 py-2">
-                  Ofertas Especiales
-                </button>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="card-body text-center">
-                <img src={logo} className="img-fluid rounded"/>
-                </div>
-            </div>
+      <section className="hero-section position-relative overflow-hidden" style={{ minHeight: '600px' }}>
+      <div id="heroCarousel" className="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100" data-bs-ride="carousel" data-bs-interval="4000">
+        <div className="carousel-inner h-100">
+          <div className="carousel-item active h-100">
+            <img 
+              src={bg1} 
+              className="d-block w-100 h-100 object-fit-cover" 
+              alt="Hilados y lanas"
+            />
+            <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundColor: 'rgba(0, 0, 0, 0.4)' }}></div>
+          </div>
+          <div className="carousel-item h-100">
+            <img 
+              src={bg2} 
+              className="d-block w-100 h-100 object-fit-cover" 
+              alt="Telas y textiles"
+            />
+            <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundColor: 'rgba(0, 0, 0, 0.4)' }}></div>
+          </div>
+          <div className="carousel-item h-100">
+            <img 
+              src={bg3}  
+              className="d-block w-100 h-100 object-fit-cover" 
+              alt="Accesorios de costura"
+            />
+            <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundColor: 'rgba(0, 0, 0, 0.4)' }}></div>
           </div>
         </div>
-      </section>
-
-      <section className="categories-section">
-        <div className="container">
-          <h2 className="text-center mb-5 fw-bold text-1">Nuestras Categorías</h2>
-          <div className="row g-4">
-            <div className="col-md-6 col-lg-3">
-              <div className="category-card card h-100 border-0 shadow-sm hover-shadow">
-                <div className="card-body text-center p-4">
-                  <div className="category-icon display-1 text-brown">🧶</div>
-                  <h5 className="card-title fw-bold mt-3">Hilados</h5>
-                  <p className="card-text text-muted">
-                    Lanas, hilos de algodón, acrílicos y mezclas para todo tipo de proyectos
-                  </p>
-                </div>
-              </div>
+      </div>
+      <div className="container position-relative" style={{ zIndex: 10, paddingTop: '80px', paddingBottom: '80px' }}>
+        <div className="row align-items-center">
+          <div className="col-lg-6">
+            <h1 className="display-4 fw-bold text-white mb-4">Mercería Amelia</h1>
+            <p className="lead text-white mb-4" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
+              Todo para tus proyectos de costura, tejido y manualidades. 
+              Encuentra los mejores hilados, telas y accesorios de calidad.
+            </p>
+            <div className="d-flex flex-wrap gap-3">
+              <button className="btn btn-primary btn-lg px-4 py-2">
+                Ver Productos
+              </button>
+              <button className="btn btn-outline-light btn-lg px-4 py-2">
+                Ofertas Especiales
+              </button>
             </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="category-card card h-100 border-0 shadow-sm hover-shadow">
-                <div className="card-body text-center p-4">
-                  <div className="category-icon display-1 text-brown">✂️</div>
-                  <h5 className="card-title fw-bold mt-3">Telas</h5>
-                  <p className="card-text text-muted">
-                    Amplia variedad de telas por metro: algodón, lino, seda y más
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="category-card card h-100 border-0 shadow-sm hover-shadow">
-                <div className="card-body text-center p-4">
-                  <div className="category-icon display-1 text-brown">🪡</div>
-                  <h5 className="card-title fw-bold mt-3">Accesorios</h5>
-                  <p className="card-text text-muted">
-                    Agujas, cierres, botones, cintas y todo lo necesario para tus creaciones
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="category-card card h-100 border-0 shadow-sm hover-shadow">
-                <div className="card-body text-center p-4">
-                  <div className="category-icon display-1 text-brown">📚</div>
-                  <h5 className="card-title fw-bold mt-3">Patrones</h5>
-                  <p className="card-text text-muted">
-                    Guías, patrones y consejos para tus proyectos de costura y tejido
-                  </p>
-                </div>
+          </div>
+          <div className="col-lg-4 offset-lg-1">
+            <div>
+              <div className="card-body cardfondo text-center p-0">
+                <img src={logo} className="img-fluid rounded cardfondo"
+                />
               </div>
             </div>
           </div>
         </div>
-      </section>
-
+      </div>
+    </section>
       <section className="featured-products">
         <div className="container">
           <h2 className="text-center mb-5 fw-bold text-1">Productos Destacados</h2>
@@ -161,7 +142,7 @@ export default function Inicio() {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
-              <h2 className="fw-bold text-1 mb-4">Sobre Mercería Calderón</h2>
+              <h2 className="fw-bold text-1 mb-4">Sobre la Tienda de Costura</h2>
               <p className="text-muted mb-4">
                 Somos tu aliado en todos tus proyectos creativos. 
                 Ofrecemos productos de calidad, asesoramiento especializado y un ambiente acogedor 
@@ -206,7 +187,7 @@ export default function Inicio() {
         <div className="container-fluid fondoF p-5">
           <div className="row g-4">
             <div className="col-md-6">
-              <h5 className="fw-bold mb-3 text-light">Mercería Calderon</h5>
+              <h5 className="fw-bold mb-3 text-light">Mercería Amelia</h5>
               <p className="text-light">
                 Tu tienda de confianza para hilados, telas y accesorios de costura.
               </p>
@@ -243,7 +224,7 @@ export default function Inicio() {
                 </li>
                 <li className="mb-3">
                   <i className="bi bi-envelope me-2 text-brown-light"></i>
-                  <span>info@merceriaccalderon.com</span>
+                  <span>info@merceriacamelia.com</span>
                 </li>
                 <li className="mb-3">
                   <i className="bi bi-clock me-2 text-brown-light"></i>
@@ -256,7 +237,7 @@ export default function Inicio() {
           <div className="row align-items-center">
             <div className="col-md-6">
               <p className="text-white mb-2 mb-md-0">
-                &copy; 2025 Mercería Calderón. Todos los derechos reservados.
+                &copy; 2025 La Caja de Costura. Todos los derechos reservados.
               </p>
             </div>
             <div className="col-md-6">
